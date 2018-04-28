@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unit-4-Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" style type="text/css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+        <div id="overlay">
+                <div id="overlay-content">Now Entering the city of Shadespire</div>
+              </div>
+            
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 box title Screen gameSpace tracker">
+                        <h1>Welcome to Shadespire</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 gameSpace tracker">
+                        Score
+                        <div class="randNumber"></div>
+                    </div>
+                    <div class="col-md-4 gameSpace gameScore tracker">
+                            <p>Wins: </p>
+                            <p> Losses: </p>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 shadeGlass btn btn1">
+                            <img src="assets/images/shadeglass1.png" alt="shadeGlass1" class="image shard gamepiece">
+                    </div>
+                    <div class="col-md-3 shadeGlass btn btn2">
+                            <img src="assets/images/shadeglass2.png" alt="shadeGlass1" class="image shard gamepiece">
+                    </div>
+                    <div class="col-md-3 shadeGlass btn btn3">
+                            <img src="assets/images/shadeglass3.png" alt="shadeGlass1" class="image shard gamepiece">
+                    </div>
+                    <div class="col-md-3 shadeGlass btn btn4">
+                            <img src="assets/images/shadeglass4.png" alt="shadeGlass1" class="image shard gamepiece">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box titleScreen howToPlay gameSpace">
+                    <p id="instructions">How to play</p>
+                    <ol>
+                        <li>You will be given a random number at the start of the game</li>
+                        <li>There are Shadeglass Shards below. By clicking on a shard you will add a specific amount of points
+                            to your total score.
+                        </li>
+                        <li>
+                            You win the game by matching your total score to random number. You lose the game if your total score goes above the random
+                            number
+                        </li>
+                        <li>The Value of each Crystal is hidden from you until you click on it</li>
+                        <li>Each time when the game starts, the game will change the value of each crystal</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src='./assets/javascript/game.js'></script>
+</body>
+
+</html>

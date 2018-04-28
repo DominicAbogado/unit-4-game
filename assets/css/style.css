@@ -1,0 +1,59 @@
+body{
+    background-image: url('/assets/images/shadespire.jpg');
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+#overlay{
+    display: none;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+opacity: 0.8;
+z-index:1001;
+}
+
+#overlay-content{ 
+position: absolute;
+display: none;
+width: 360px;
+height: 90px;
+padding: 16px;
+border: 16px solid orange;
+background-color: white;
+z-index:1002;
+}
+
+.gameSpace{
+    background: #0abab5;
+    border: solid 2px black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.howToPlay{
+    text-align: left;
+    font-size: 14px;
+
+}
+#instructions{
+    text-align:center;
+    font-size:24px;
+}
+.gameScore{
+    text-align:left;
+}
+
+.tracker{
+    border:solid 1px black;
+}
+
+img{
+    width:100px;
+    height:auto;
+}
