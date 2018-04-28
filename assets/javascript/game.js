@@ -15,6 +15,10 @@ var shard2 = 0
 var shard3 = 0
 var shard4 = 0
 
+var yourScore = 0
+
+
+
 
 
 
@@ -68,16 +72,32 @@ function genPieceNum4() {
 
   //Assign the random number to the 4 shards
   $('.shardPieces').on('click', '.shard1' ,function () {
-    alert($(this).attr('value'))
+    var one = ($(this).attr('value'));
+    var oneNum = parseInt(one);
+    yourScore = oneNum + yourScore;
+    $('#userNumber').text(yourScore);
+    console.log(yourScore);
   })
   $('.shardPieces').on('click', '.shard2' ,function () {
-    alert($(this).attr('value'))
+    var two = ($(this).attr('value'));
+    var twoNum = parseInt(two);
+    yourScore = twoNum + yourScore;
+    $('#userNumber').text(yourScore);
+    console.log(yourScore);
   })
   $('.shardPieces').on('click', '.shard3' ,function () {
-    alert($(this).attr('value'))
+    var three = ($(this).attr('value'))
+    var threeNum = parseInt(three);
+    yourScore = threeNum + yourScore;
+    $('#userNumber').text(yourScore);
+    console.log(yourScore);
   })
   $('.shardPieces').on('click', '.shard4' ,function () {
-    alert($(this).attr('value'))
+    var four = ($(this).attr('value'))
+    var fourNum = parseInt(four);
+    yourScore = twoNum + yourScore;
+    $('#userNumber').text(yourScore);
+    console.log(yourScore);
   })
 
 
@@ -89,6 +109,7 @@ $('.titleScreen').on('click', function () {
   wins = 0
   losses = 0
   shardnumber = 0
+  yourScore = 0
   genShardNum()
   genPieceNum1()
   genPieceNum2()
@@ -98,6 +119,13 @@ $('.titleScreen').on('click', function () {
   $
 
 })
+
+function gathering(){
+  $()
+}
+
+//GAME LOGIC
+
 
 // $('.titleScreen').on('click',  function gameStart () {
 
