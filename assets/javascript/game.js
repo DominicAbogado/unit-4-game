@@ -3,11 +3,60 @@
 // }
 
 // TODO
+//Global Variables
 
-//START GAME
+var wins = 0
+var losses = 0
+var shardnumber = 0
+
+
+
+
+// Click function on the shard pieces
+//$('.shardPieces').on(click, function(){
+
+
+
+// }
+
 //Function to assign a random number between 19 - 120 to the number
+function genShardNum(){
+  for (var i = 0; i < 1; i++) {
+    var shardRan = Math.floor(Math.random() * 101) + 19;
+    shardnumber = shardnumber + shardRan;
+  }
+}
+
 
 //Function to generate a random number between 1 -12 to each of the 4 shards
+function genPieceNum(){
+  for (var i = 0; i < 1; i++) {
+    var pieceRan = Math.floor(Math.random() * 11) + 1;
+  }
+}
+
+
+genShardNum()
+genPieceNum()
+
+
+
+
+
+//START GAME
+$('body').on('click', function(){
+  wins = 0
+  losses = 0
+  shardnumber = 0
+  genShardNum()
+  $('#shardNumber').text(shardnumber)
+
+
+
+})
+
+// $('.titleScreen').on('click',  function gameStart () {
+
 
 //When the shard is clicked, whatever random number was generated will be added together
 
@@ -17,27 +66,24 @@
 
 //Global Variables
 
-var wins = 0
-var losses = 0
+// $.fn.center = function () {
+//     this.css("position","absolute");
+//     this.css("top", Math.max(0, (
+//       ($(window).height() - $(this).outerHeight()) / 2) + 
+//        $(window).scrollTop()) + "px"
+//     );
+//     this.css("left", Math.max(0, (
+//       ($(window).width() - $(this).outerWidth()) / 2) + 
+//        $(window).scrollLeft()) + "px"
+//     );
+//     return this;
+//   }
 
-$.fn.center = function () {
-    this.css("position","absolute");
-    this.css("top", Math.max(0, (
-      ($(window).height() - $(this).outerHeight()) / 2) + 
-       $(window).scrollTop()) + "px"
-    );
-    this.css("left", Math.max(0, (
-      ($(window).width() - $(this).outerWidth()) / 2) + 
-       $(window).scrollLeft()) + "px"
-    );
-    return this;
-  }
-  
-  $("#overlay").show();
-  $("#overlay-content").show().center();
-  
-  setTimeout(function(){    
-    $("#overlay").fadeOut();
-  }, 3000);
+//   $("#overlay").show();
+//   $("#overlay-content").show().center();
+
+//   setTimeout(function(){    
+//     $("#overlay").fadeOut();
+//   }, 3000);
 
 //start game function
