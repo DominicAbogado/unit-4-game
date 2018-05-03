@@ -16,17 +16,14 @@
 </head>
 
 <body>
-        <div id="overlay">
-                <div id="overlay-content">Now Entering the city of Shadespire</div>
-              </div>
-            
-
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-12 box titleScreen gameSpace tracker">
                         <h1>Welcome to Shadespire</h1>
+                        <h2>Click here to begin the game</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -39,9 +36,10 @@
                         <div id="userNumber"></div>
                     </div>
                     <div class="col-md-4 gameSpace gameScore tracker">
-                            <p>Wins: </p>
-                            <p id = 'shard1num'></p>
-                            <p> Losses: </p>
+                            <p id="wins"></p>
+                            
+                            <p id="losses"></p>
+                            
                         </div>
                 </div>
                 <div class="row shardPieces">
@@ -68,7 +66,7 @@
                             to your total score.
                         </li>
                         <li>
-                            You win the game by matching your total score to random number. You lose the game if your total score goes above the random
+                            You win the game by matching your score to the number on the left. You lose the game if your total score goes above the random
                             number
                         </li>
                         <li>The Value of each Crystal is hidden from you until you click on it</li>
