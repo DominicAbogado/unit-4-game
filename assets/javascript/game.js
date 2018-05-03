@@ -136,7 +136,7 @@ $(document).ready(function () {
     pieceNumber = 0;
     shardnumber = 0;
     yourScore = 0;
-    $('userNumber').text(yourScore)
+    $('#userNumber').text(yourScore)
     shard1 = 0
     shard2 = 0
     shard3 = 0
